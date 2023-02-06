@@ -3,10 +3,39 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:PlayfulCRM"
-        mc:Ignorable="d"
         Title="PlayfulCRM" Height="450" Width="800">
-    <Grid>
+    <StackPanel>
+        <StackPanel Orientation="Horizontal" Background="LightBlue">
+            <Image x:Name="companyLogo" Width="60" Height="60" Source="Assets/Images/user.png"/>
+            <TextBox FontSize="14" Width="140" Height="22" Margin="20, 5, 5, 5"></TextBox>
+            <Button Width="70" Height="22">Search</Button>
+            <Button x:Name="homeButton"
+                    Margin="250, 5, 0, 5"
+                    Width="64"
+                    Height="64"
+                    Background="LightSkyBlue"
+                    Click="homeButton_Click">
+                <StackPanel>
+                    <Image Source="Assets/Images/home.png" Width="24" Height="24"></Image>
+                    <Label FontSize="10">Home</Label>
+                </StackPanel>
+            </Button>
+            <Button x:Name="customersButton"
+                    Margin="5, 5, 5, 5"
+                    Width="64"
+                    Height="64"
+                    Background="LightSkyBlue"
+                    HorizontalAlignment="Right"
+                    Click="customersButton_Click">
+                <StackPanel>
+                    <Image Source="Assets/Images/users-alt.png" Width="24" Height="24"></Image>
+                    <Label FontSize="10">Customers</Label>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        <StackPanel x:Name="contentPanel" Margin="10, 10, 10, 10">
+            <TextBlock x:Name="homeViewTextBlock">This is the homeview</TextBlock>
+        </StackPanel>
 
-    </Grid>
+    </StackPanel>
 </Window>

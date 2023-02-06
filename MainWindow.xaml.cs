@@ -24,5 +24,24 @@ namespace PlayfulCRM
         {
             InitializeComponent();
         }
+
+        private void customersButton_Click(object sender, RoutedEventArgs e)
+        {
+            // This is an uggly solution for changing content depending on selection.
+            // Don't memorize it, we will be locking into using different xaml-files instead.
+            TextBlock customerViewTextBlock = new TextBlock();
+            customerViewTextBlock.Text = "Customer was clicked!";
+            contentPanel.Children.Clear();
+            contentPanel.Children.Add(customerViewTextBlock);
+        }
+
+        private void homeButton_Click(object sender, RoutedEventArgs e)
+        {
+            // This is an uggly solution for changing content depending on selection.
+            // Don't memorize it, we will be locking into using different xaml-files instead.
+            contentPanel.Children.Clear();
+            contentPanel.Children.Add(homeViewTextBlock);
+            homeViewTextBlock.Text = "Home was clicked!";
+        }
     }
 }

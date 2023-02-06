@@ -7,4 +7,32 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Assets\Images\alarm-exclamation.png" />
+    <None Remove="Assets\Images\alarm-snooze.png" />
+    <None Remove="Assets\Images\check.png" />
+    <None Remove="Assets\Images\clock.png" />
+    <None Remove="Assets\Images\edit.png" />
+    <None Remove="Assets\Images\home.png" />
+    <None Remove="Assets\Images\logo-Placeholder.png" />
+    <None Remove="Assets\Images\pencil.png" />
+    <None Remove="Assets\Images\trash.png" />
+    <None Remove="Assets\Images\user.png" />
+    <None Remove="Assets\Images\users-alt.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Images\alarm-exclamation.png" />
+    <Resource Include="Assets\Images\alarm-snooze.png" />
+    <Resource Include="Assets\Images\check.png" />
+    <Resource Include="Assets\Images\clock.png" />
+    <Resource Include="Assets\Images\edit.png" />
+    <Resource Include="Assets\Images\home.png" />
+    <Resource Include="Assets\Images\logo-Placeholder.png" />
+    <Resource Include="Assets\Images\pencil.png" />
+    <Resource Include="Assets\Images\trash.png" />
+    <Resource Include="Assets\Images\user.png" />
+    <Resource Include="Assets\Images\users-alt.png" />
+  </ItemGroup>
+
 </Project>
